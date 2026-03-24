@@ -3,8 +3,8 @@ Contributors: etruel, khaztiel, gerarjos14, vanbom
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VTNR4BH8XPDR6  
 Tags: posts, duplicates, delete, duplicated posts, remove copies  
 Requires at least: 3.1.0  
-Tested up to: 6.8.1
-Stable tag: 6.0.3
+Tested up to: 7.0
+Stable tag: 6.0.4
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -98,6 +98,8 @@ You can either install it automatically from the WordPress admin, or do it manua
 1. The logs are also in a new tab saving time to load the page. Click on title to refresh.
 
 == Changelog ==
+
+= 6.0.4 Mar 24, 2026 =
 
 = 6.0.3 Nov 11, 2025 =
 * Improvements to the CSS styles used for tabs on screens.

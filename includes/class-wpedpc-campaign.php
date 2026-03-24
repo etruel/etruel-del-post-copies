@@ -90,6 +90,12 @@ class WPEDPC_Campaign {
 	public $comment_count = 0;
 	public $filter;
 
+	public $post_type;
+    public $optperiodamount;
+    public $beforeperiod;
+    public $optperiodunit;
+    public $_edit_last;
+    public $_edit_lock;
 	/**
 	 * Get things going
 	 *

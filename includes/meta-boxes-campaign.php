@@ -75,7 +75,8 @@ class meta_boxes_campaign {
 		add_action('admin_head',array('meta_boxes_campaign', 'admin_head_scripts') );
 	}
 	static function admin_head_scripts() {
-		wp_enqueue_script('wpedpc-meta-boxes-admin-head', plugins_url('/js/meta-boxes-admin-head.js',__FILE__), array( 'jquery' ), WPEDPC_VERSION, false );
+		//wp_enqueue_script('wpedpc-meta-boxes-admin-head', plugins_url('/js/meta-boxes-admin-head.js',__FILE__), array( 'jquery' ), WPEDPC_VERSION, false );
+		wp_register_script('wpedpc-meta-boxes-admin-head', plugins_url('/js/meta-boxes-admin-head.js',__FILE__), array( 'jquery' ), WPEDPC_VERSION, false );
 		wp_localize_script('wpedpc-meta-boxes-admin-head', 'wpedpc_object_meta_boxes',
 				array(	'msg_campaign' => __('Campaign', 'etruel-del-post-copies'),
 						'msg_campaign_result' => __('Campaign Results', 'etruel-del-post-copies'),
@@ -91,7 +92,7 @@ class meta_boxes_campaign {
 						'msg_before_del' => __('Are you sure you want to delete the post with ID:', 'etruel-del-post-copies' ),
 						'del_post_cp_nonce' => wp_create_nonce('etruel-del-post-copies')
 				) );
-	
+		wp_enqueue_script('wpedpc-meta-boxes-admin-head');
 	}
 	static function default_fields( $new_status, $old_status, $post ) {
 		if( $post->post_type == 'wpedpcampaign' && $old_status == "new"){		
