@@ -3,7 +3,7 @@ Contributors: etruel, khaztiel, gerarjos14, vanbom
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VTNR4BH8XPDR6  
 Tags: posts, duplicates, delete, duplicated posts, remove copies  
 Requires at least: 3.1.0  
-Tested up to: 7.0
+Tested up to: 6.9.4
 Stable tag: 6.0.4
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
@@ -100,6 +100,11 @@ You can either install it automatically from the WordPress admin, or do it manua
 == Changelog ==
 
 = 6.0.4 Mar 24, 2026 =
+
+* **Full compatibility with PHP 8.2 and 8.3:** Eliminates all warnings and notices related to dynamic properties that were flooding the error logs. Your site will be cleaner and faster.
+* **Support for WordPress 6.9+:** Fixed a script dependency error that was causing notices in the admin panel. Works perfectly with the latest versions of WordPress.
+* **Greater stability:** Optimized the loading of Select2 scripts to avoid conflicts with other plugins and themes.
+* **Enhanced security:** Updated the minimum requirement to PHP 7.0+ to ensure compatibility with modern, secure environments.
 
 = 6.0.3 Nov 11, 2025 =
 * Improvements to the CSS styles used for tabs on screens.

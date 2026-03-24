@@ -9,19 +9,6 @@
  * Text Domain: etruel-del-post-copies
  * Domain Path: languages
  *
- * WP delete post copies is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 2 of the License, or
- * any later version.
- *
- * WP delete post copies is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with WP delete post copies. If not, see <http://www.gnu.org/licenses/>.
- *
  * @package WPEDPC
  * @category Core
  * @author Esteban Truelsegaard
@@ -31,7 +18,6 @@ if (!defined('ABSPATH'))
 	exit;
 // Plugin version
 if (!defined('WPEDPC_VERSION'))
-
 	define('WPEDPC_VERSION', '6.0.4');
 
 //require_once 'includes/cron-functions.php';
